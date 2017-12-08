@@ -48,6 +48,9 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.title {
+		font-size: 15px;
+	}
 /* Box Model */
 
 	*, *:before, *:after {
