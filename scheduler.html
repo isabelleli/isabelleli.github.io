@@ -43,7 +43,7 @@
             <ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
-							<li><a href="generic.html">Resume</a></li>
+							<li><a href="resume.html">Resume</a></li>
 						</ul>
 					</nav>
 
@@ -72,7 +72,57 @@
                  skills and to challenge myself. I used <strong>ReactJS</strong> for the front-end and scraped data off of the course
                  catalog using the <strong>Selenium</strong> library in <strong>Python</strong>.
               </p>
+              <br />
               <h2>Scraping with Selenium</h2>
+              <p>
+                <div class="12u$"><span class="image fit"><img src="images/scraper.png" alt="" /></span></div>
+                To write my scripts for scraping, I used <strong>jupyter notebooks</strong>, a tool I discovered during my summer research experience at Wellesley
+                (and fell in love with).
+                <br />
+                <br />
+                Although scraping the information, parsing it, and storing everything into a JSON file only took a day or so, it took me a while to
+                figure out how to parse the data. Some difficulties I ran into include: parsing alternative Wednesday classes (some Economics
+                classes have regular class periods on Monday and Thursdays but will have an occasional Wednesday class) and generally parsing the
+                days of the week and times that a class is offered on.
+                <br />
+                <br />
+                In the future, I would love to talk with the administration about getting access to a database of the courses (I have plans to
+                talk with the Registrar in Spring 2018). While running the scraping script is a quick process, it isn't a sustainable
+                solution.
+              </p>
+              <br />
+              <h2>Front-End Work</h2>
+              <p>
+                Like I said in the summary, I used <strong>ReactJS</strong> to code the front-end portion. This was my first time using
+                ReactJS, which was interesting to learn in the span of a week. (Why React? - My friend told me about how cool and useful
+                it is so I just decided to try it out.)
+                <br />
+                <br />
+                I divided the scheduler into a couple main components - a <strong>courses</strong> component that controlled the entire scheduler,
+                a <strong>search</strong> component, and a <strong>calendar</strong> component.
+                <br />
+                <br />
+                The courses component holds a list of currently selected courses. Based on that list, it passes a list of filtered classes
+                to the search component (the filtering is to prevent users from selecting two courses which happen at the same time).
+                <br />
+                The search component, as the name suggests, consists of the search interface and also updates the list of currently selected
+                courses.
+                <br />
+                Finally, the calendar component creates class div elements and their respective pop-ups (which hold information such as
+                the professor teaching the class, the times it's available, and the full name of the course) and adds them onto the calendar.
+                <br />
+                <br />
+                Some challenges I ran into included: organizing my ideas (and organizing the React components), handling time conflicts, and
+                styling the actual calendar and the course blocks.
+                <br />
+                Furthermore, since I never used ReactJS before and completed the project in a week, I missed many nuances of React
+                which would have made my code better. I plan on investing time over Winter 2018 to properly learning React and updating
+                the course scheduler for registration in Spring 2018. I would also like to add more features such as being able to add your
+                own courses. I hope to update this page in Spring 2018 with all my additions!
+              </p>
+              <p>
+                <em>Written on December 2017</em>
+              </p>
 					</div>
 				</div>
 
